@@ -6,5 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/gl-matrix": "^2.4.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
   }
 }

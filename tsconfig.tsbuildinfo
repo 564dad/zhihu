@@ -1,0 +1,1 @@
+{"version":"7.0.2","root":["./src/atlas.ts","./src/config.ts","./src/light.ts","./src/main.ts","./src/mesher.ts","./src/player.ts","./src/renderer.ts","./src/rng.ts","./src/world.ts"],"packageJsons":["./node_modules/gl-matrix/package.json","./package.json"]}

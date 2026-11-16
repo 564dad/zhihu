@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>voxel-cave</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #000; }
+    #c { width: 100vw; height: 100vh; display: block; }
+    #crosshair {
+      position: fixed; left: 50%; top: 50%; width: 12px; height: 12px;
+      transform: translate(-50%, -50%); pointer-events: none;
+      background:
+        linear-gradient(#fff, #fff) center/2px 12px no-repeat,
+        linear-gradient(#fff, #fff) center/12px 2px no-repeat;
+      mix-blend-mode: difference; opacity: 0.8;
+    }
+    #debug {
+      position: fixed; left: 8px; top: 8px; color: #9f9; display: none;
+      font: 12px/1.5 monospace; white-space: pre; pointer-events: none;
+      text-shadow: 0 1px 2px #000;
+    }
+    #hint {
+      position: fixed; left: 50%; top: 60%; transform: translateX(-50%);
+      color: #ccc; font: 14px/1.8 sans-serif; text-align: center;
+      pointer-events: none; text-shadow: 0 1px 3px #000;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="crosshair"></div>
+  <div id="debug"></div>
+  <div id="hint">点击进入 · WASD 移动 · 空格跳 · F 飞行<br/>左键挖方块 · 右键插火把 · F3 调试信息</div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
